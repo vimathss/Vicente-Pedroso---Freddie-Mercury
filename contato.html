@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CONTATO- Freddie Mercury</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/jpg" href="pics/icone.png"> 
+    <link rel="stylesheet" href="style.css">
+
+    <script language="javascript" type="text/javascript"> 
+     function validar () {
+      var nome = form1.nome.value;
+     var email = form1.email.value;
+     var comentario = form1.comentario.value;
+    
+       if (nome == ""){
+      alert ('Preencha o campo com o seu nome');
+      form1.nome.focus ();
+        return false;
+        }
+
+        if (email == ""){
+        alert ('Preencha o campo com o seu email');
+        form1.email.focus ();
+        return false;
+        }
+    
+        if (comentario == ""){
+        alert ('Preencha o campo com o seu comentario');
+        form1.comentario.focus ();
+        return false;
+        }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="pagina1">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História</a>
+                <ul>
+                    <li><a href="historia.html"><h6>Início</h6></a></li>
+                    <li><a href="historia.html"><h6>Sucesso</h6></a></li>
+                    <li><a href="historia.html"><h6>Morte</h6></a></li>
+                </ul>
+                </li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html"><div class="headermarktext">Contato</div></a></li>
+            </ul>
+        </nav>
+        <a href="index.html"><img src="pics/icone2.png" width-="110px" height="110px" class="logo"></a>
+
+    <div class="titulo">Nos Contate</div>
+    <div class="boxcontato">
+        <div class="tituloboxgaleria">Avalie Minha Página</div>
+        <img src="pics/artfreddie.png" class="fotocontato">
+
+        <form name="form1" action="contato2.html" method="post">
+                    <div class="input">
+                    <input name="nome" type="text" placeholder="Seu Nome"></br>
+                    <input name="email" type="text" placeholder="Seu Email">
+                     <textarea name="comentario" placeholder="Avalie meu site de 0 a 10!" type="text"></textarea></br>
+                      <button type="submit" onclick="return validar()">Enviar</button>
+                    <div class="limpar">
+                        <input type="reset" name="limpa" value="Limpar">
+                    </div>
+            
+                    </div>
+                </div>
+                </div>
+        </form>
+    
+    </div>
+    <div class="direito">Vicente Pedroso 2023 - &copyTodos os Direitos Reservados <a href="#"><img src="pics/seta.png" width="2%" class="seta"></a></div>  
+</body>
+</html>
