@@ -11,6 +11,7 @@
      function validar () {
       var nome = form1.nome.value;
      var email = form1.email.value;
+     var telefone = form1.telefone.value;
      var comentario = form1.comentario.value;
     
        if (nome == ""){
@@ -22,6 +23,13 @@
         if (email == ""){
         alert ('Preencha o campo com o seu email');
         form1.email.focus ();
+        return false;
+        }
+         
+          
+       if (telefone == ""){
+      alert ('Preencha o campo com o seu telefone');
+      form1.telefone.focus ();
         return false;
         }
     
@@ -62,7 +70,8 @@
         <form name="form1" action="contato2.html" method="post">
                     <div class="input">
                     <input name="nome" type="text" placeholder="Seu Nome"></br>
-                    <input name="email" type="text" placeholder="Seu Email">
+                    <input name="email" type="text" placeholder="exemplo.@email.com.br">
+                    <input name="telefone" type="text" placeholder="(DD) 11223-4455">
                      <textarea name="comentario" placeholder="Avalie meu site de 0 a 10!" type="text"></textarea></br>
                       <button type="submit" onclick="return validar()">Enviar</button>
                     <div class="limpar">
