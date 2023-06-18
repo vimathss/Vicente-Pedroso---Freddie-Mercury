@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/jpg" href="pics/icone.png"> 
     <link rel="stylesheet" href="style.css">
-
     <script language="javascript" type="text/javascript"> 
+    function aviso (){
+        alert('Dados Enviados, entraremos em contato em breve!')
+    }
+
      function validar () {
       var nome = form1.nome.value;
      var email = form1.email.value;
-     var telefone = form1.telefone.value;
      var comentario = form1.comentario.value;
     
        if (nome == ""){
@@ -25,18 +27,16 @@
         form1.email.focus ();
         return false;
         }
-         
-          
-       if (telefone == ""){
-      alert ('Preencha o campo com o seu telefone');
-      form1.telefone.focus ();
-        return false;
-        }
     
         if (comentario == ""){
         alert ('Preencha o campo com o seu comentario');
         form1.comentario.focus ();
         return false;
+        }
+
+        // Coloquei vários espaços para alinhar a mensagem de envio! // 
+        else {
+        alert ('Dados enviados com sucesso.                                                                Entraremos em contato em breve!')
         }
         }
     </script>
@@ -67,7 +67,7 @@
         <div class="tituloboxgaleria">Avalie Minha Página</div>
         <img src="pics/artfreddie.png" class="fotocontato">
 
-        <form name="form1" action="contato2.html" method="post">
+        <form name="form1" action="index.html" method="post">
                     <div class="input">
                     <input name="nome" type="text" placeholder="Seu Nome"></br>
                     <input name="email" type="text" placeholder="exemplo.@email.com.br">
